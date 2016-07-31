@@ -160,9 +160,13 @@ const GameView  = React.createClass({
     }
 
     return(
+
       <div id="box">
-        {modal}
+      <h1 id= "title"> Jeopardy! </h1>
+      {modal}
+        <div id="categories">
         {categories}
+        </div>
         <Scoreboard />
       </div>
     )

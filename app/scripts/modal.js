@@ -21,17 +21,11 @@ const GameBoardQuestionModal = React.createClass({
     }
  },
 
- // UserAnswer: function(e){
-
-
-
 
  submit: function(e){
    e.preventDefault();
    let guess = this.refs.answerInput.value;
-  //  let guess = document.getElementById('answerInput').value;
    if (guess === this.props.question.answer){
-     console.log('right');
      let getMoney= store.session.get('money');
      getMoney +=  this.props.question.value;
      store.session.set('money', getMoney);
@@ -47,23 +41,21 @@ const GameBoardQuestionModal = React.createClass({
 
 back:function(){
   this.props.hideModal();
-  console.log('this at modal ', this);
 },
 
     render: function(){
-      console.log(this.refs);
       let answer;
       let guess;
       let result;
       if (this.state.answered){
-        answer = <p> Answer: {this.props.question.answer} </p>
-        guess= <p> Your answer: {this.refs.answerInput.value}</p>
+        answer = <p id="answer"> Answer: {this.props.question.answer} </p>
+        guess= <p id ="yourAnswer"> Your answer: {this.refs.answerInput.value}</p>
       }
 
       return(
         <div id="modal">
         <div id="insideModal">
-        {this.props.question.question}
+        <p id ="modalQuestion" >{this.props.question.question}</p>
         <input type="text" id="answerInput" placeholder="answer" ref="answerInput"/>
         <input onClick ={this.submit} type="submit" id="enter" value="submit"/>
         <input onClick ={this.back} type="submit" id="enter" value="close"/>
