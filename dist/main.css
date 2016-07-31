@@ -1,0 +1,66 @@
+div#box {
+  display: flex;
+  margin-left: 2rem; }
+
+div#title {
+  margin: auto;
+  width: 16%;
+  height: 29.1rem; }
+
+div#square {
+  padding-bottom: 2rem;
+  border: 2px solid blue;
+  width: 11.9rem;
+  margin-left: -2.5rem;
+  text-align: center;
+  padding-top: 22.8px; }
+  div#square:hover {
+    background: green; }
+
+h3 {
+  margin-left: 0rem;
+  margin-bottom: 2.0rem;
+  margin-top: 2rem;
+  font-size: 1rem;
+  text-align: center; }
+
+.scoreboard {
+  transform: translateX(-38rem); }
+
+#money {
+  text-align: center;
+  transform: translateY(1233%); }
+
+#modal {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5); }
+  #modal #insideModal {
+    border: 5px solid #d77e08;
+    background-color: #446455;
+    width: 45%;
+    height: 26rem;
+    margin: 9% auto auto; }
+
+.confirmationContainer {
+  display: none;
+  top: 0;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.8); }
+  .confirmationContainer .confirmContainer {
+    border: 5px solid #d77e08;
+    background-color: #446455;
+    width: 45%;
+    margin: 10% auto auto; }
+    .confirmationContainer .confirmContainer h2 {
+      text-align: center;
+      font-size: 4rem;
+      font-family: arial;
+      color: #d77e08; }
+
+/*# sourceMappingURL=main.css.map */

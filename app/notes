@@ -1,0 +1,54 @@
+///components
+// first component is the main view of the game board - in charge of all the data
+    // one component that has all the data i want to put onto the main page -- it will have the 6 categories, 5 questions and $
+
+/// make component with 1 category with 5 questions
+
+// make  question component with 20 questions(5for each) and
+
+//1 question view component with 20  'boxes'.
+
+///2: component will take the data that we want to show on the main page and render them into the dom (like the postPreview and postPreviewList components in notes)
+
+//3: this component will be the modol that will pop onto the screen when a question is clicked
+      //  model will have the question displayed and an input box to type the answer.
+      // 2? buttons for submitting your answer or passing the question
+      //??? option is to have the money displayed--like       i chose a $200 question so $200 will appear to let me know that that is the potential money i could earn
+
+//4: i think this will be another component-- on the main page a section to display the money that i have won
+
+
+
+
+
+//components
+
+//1: gameboard view -- holds all 6 categories questions and money
+//2:  one category component that holds 5 questions
+//3: a question component with 30 questions (6*5 for each) (gameboard question)
+//4: a question view component that displays the question that we chose
+
+
+/// one tiny question square that has one question but we "need " 30 of them of tiny squres.
+
+
+
+
+
+
+
+//models
+//  2 model showing the category and the questions and inside will have what we are definging like key words of title,question, answer.
+
+//collections
+// 2 collections containing obj that have a catergory and question and the question collection holds questions and answers
+
+//data api
+// do i have to make my own data sheet?
+  // do i have to chose the categories and questions i want from the jeopardy page and put them into an array myself? or can i grab directly from the website?
+// i will  need categories, questions, and answers
+
+
+//routes
+// main page router
+//? the pop up model that displays your question
