@@ -1,22 +1,22 @@
 @font-face {
   font-family: swiss911;
-  src: url(assets/swiss911.ttf); }
+  src: url("assets/swiss911.ttf"); }
 @font-face {
   font-family: Korinna;
-  src: url(assets/Korinna.ttf); }
+  src: url("assets/Korinna.ttf"); }
 @font-face {
   font-family: gyparody;
-  src: url(assets/gyparody.ttf); }
+  src: url("assets/gyparody.ttf"); }
 body {
-  background-image: url("assets/jeopardy2.jpg");
+  background-image: url("assets/jeopardy3.jpg");
   background-size: contain; }
 
 h1 {
+  color: #fff;
   font-family: gyparody;
   text-align: center;
   font-size: 6rem;
   letter-spacing: 5px;
-  color: white;
   margin: 1rem; }
 
 div#categories {
@@ -46,7 +46,7 @@ div#square {
     background: #3E5BB6; }
 
 h3 {
-  margin-left: 0rem;
+  margin-left: 0;
   margin-bottom: 2.0rem;
   margin-top: 2rem;
   font-size: 1rem;
