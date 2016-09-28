@@ -1,19 +1,21 @@
-import Score from './score';
+import Score from './model/score';
 import React from 'react';
-import ReactDOM from 'react-dom';
 import {router, Route, hashHistory, Link} from 'react-router';
-// import GameBoardQuestion from './data';
-// import GameView from './GameView';
-import Router from './router';
 import Session from './session';
-
+import CategoryModel from './model/categoryModel';
+import CategoryCollection from './collection/categoryCollection';
 
 
 
 
 
 let store = {
-  session: new Session()
+  session: new Session(),
+  categories: new CategoryCollection(),
+  category: new CategoryModel(),
+  score: new Score(),
+  authtoken: '',
+
 }
 
 export default store;

@@ -56,9 +56,12 @@ back:function(){
         <div id="modal">
         <div id="insideModal">
         <p id ="modalQuestion" >{this.props.question.question}</p>
+        <div className="buttons">
+
         <input type="text" id="answerInput" placeholder="answer" ref="answerInput"/>
         <input onClick ={this.submit} type="submit" id="enter" value="submit"/>
         <input onClick ={this.back} type="submit" id="enter" value="close"/>
+        </div>
         {guess}
         {answer}
         </div>

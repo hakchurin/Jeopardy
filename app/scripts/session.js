@@ -12,7 +12,6 @@ defaults:{
 
 }
 
-
 });
 
 export default Session;

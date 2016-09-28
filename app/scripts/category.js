@@ -5,33 +5,21 @@ import GameBoardQuestion from './data';
 // import GameView from './gameView;'
 
 
-
-
-
-
 const GameViewList = React.createClass({
-  // getInitialState: function(){
-  //   return {
-  //     title: '',
-  //
-  //   }
-  // },
   componentDidMount: function(){
-    // $.ajax({
-    //   type: 'GET',
-    //   url: `http://jservice.io/api/category?id=6`,
-    //   success: (data) => {
-    //   this.setState({title:data})
-    // }
-    // })
+
   },
   render: function(){
-    let questions = this.props.category.clues.map((clue,i,arr) => {
-      return < GameBoardQuestion key= {i} question= {clue} showQuestion = {this.props.showQuestion} />
-    });
+    console.log(this.props);
+    let questions;
+    // if (this.props.category.category.clues.length) {
+      questions = this.props.category.category.clues.map((clue,i,arr) => {
+        return < GameBoardQuestion key= {i} question= {clue} showQuestion = {this.props.showQuestion} />
+      });
+    // }
     return (
       <div>
-      <h3>{this.props.category.title} </h3>
+      <h3>{this.props.category.category.title} </h3>
       <ul>
         {questions}
       </ul>

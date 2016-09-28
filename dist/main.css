@@ -8,8 +8,8 @@
   font-family: gyparody;
   src: url("assets/gyparody.ttf"); }
 body {
-  background-image: url("assets/jeopardy3.jpg");
-  background-size: contain; }
+  background-image: url(assets/Jeopardy6.jpg);
+  background-size: cover; }
 
 h1 {
   color: #fff;
@@ -17,11 +17,15 @@ h1 {
   text-align: center;
   font-size: 6rem;
   letter-spacing: 5px;
-  margin: 1rem; }
+  margin: 30px;
+  margin-bottom: 3rem; }
 
 div#categories {
   display: flex;
-  margin-left: 1rem; }
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0; }
 
 div#title {
   margin: auto;
@@ -33,7 +37,7 @@ div#square {
   box-sizing: border-box;
   padding-bottom: 2rem;
   border: 2px solid black;
-  width: 11.9rem;
+  width: 13.5rem;
   margin-left: -2.5rem;
   text-align: center;
   padding-top: 22.8px;
@@ -41,17 +45,22 @@ div#square {
   color: #FFFE56;
   font-family: swiss911;
   font-size: 2.3rem;
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+  cursor: pointer; }
   div#square:hover {
     background: #3E5BB6; }
 
 h3 {
-  margin-left: 0;
-  margin-bottom: 2.0rem;
-  margin-top: 2rem;
+  font-family: Korinna;
+  margin-bottom: 3rem;
   font-size: 1rem;
   text-align: center;
-  color: white; }
+  color: white;
+  height: 2rem;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 1rem; }
 
 .scoreboard {
   text-align: center; }
@@ -86,39 +95,59 @@ h3#yourMoney {
     margin: 9% auto auto;
     color: white;
     font-family: Korinna;
-    font-size: 1.6rem; }
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; }
 
 p#modalQuestion {
-  margin-top: 4rem;
   text-align: center; }
 
 input#answerInput {
-  margin-top: 3rem;
-  margin-left: 11rem;
-  height: 2.5rem;
+  text-align: center;
+  height: 2.6rem;
   width: 14rem;
-  margin-left: 4rem;
-  font-size: 1.3rem; }
+  font-size: 1.3rem;
+  padding: 0;
+  margin: 0; }
 
 p#yourAnswer {
   color: black;
-  margin-left: 1rem; }
+  margin-left: 1rem;
+  margin: 0 auto;
+  padding: 0; }
 
 p#answer {
   color: black;
-  margin-left: 1rem; }
-
-h3 {
-  font-family: Korinna; }
+  margin-left: 1rem;
+  margin: 0 auto;
+  padding: 0; }
 
 input#enter {
   background-color: white;
   color: black;
-  padding: 10px 23px;
   font-size: 16px;
-  margin-left: 1rem;
-  text-align: center; }
+  text-align: center;
+  height: 3rem;
+  padding: 0;
+  margin: 0;
+  width: 5rem;
+  cursor: pointer; }
   input#enter:hover {
     background-color: #FFFE56; }
+
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%; }
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 73%; }
 
 /*# sourceMappingURL=main.css.map */

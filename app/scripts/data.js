@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import {router, Route, hashHistory, Link} from 'react-router';
 import $ from 'jquery';
 import GameView from './GameView';
-//import GameCategory from './GameCategory';
 import GameBoardQuestionModal from './modal';
 import GameBoardQuestion2 from './secondGameQuestion';
 //
