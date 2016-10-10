@@ -17,7 +17,8 @@ const GameBoardQuestionModal = React.createClass({
   getInitialState: function(){
     return{
       answered: false,
-      result: false
+      result: false,
+      answer: null,
     }
  },
 
@@ -25,12 +26,17 @@ const GameBoardQuestionModal = React.createClass({
  submit: function(e){
    e.preventDefault();
    let guess = this.refs.answerInput.value;
-   if (guess === this.props.question.answer){
+   let answer = this.props.question.answer;
+   answer = answer.toLowerCase();
+   guess = guess.toLowerCase();
+   answer = answer.replace('<i>','').replace('</i>','').replace('(', '').replace(')').replace('\\', '').replace('a', '').replace('the', '');
+   this.setState({result:true});
+   this.setState({answer: answer});
+   if (answer === guess){
      let getMoney= store.session.get('money');
      getMoney +=  this.props.question.value;
      store.session.set('money', getMoney);
      store.session.trigger('change')
-     this.setState({result:true});
    } else {
      this.setState({result:false});
      console.log('wrong');
@@ -42,13 +48,12 @@ const GameBoardQuestionModal = React.createClass({
 back:function(){
   this.props.hideModal();
 },
-
     render: function(){
       let answer;
       let guess;
       let result;
-      if (this.state.answered){
-        answer = <p id="answer"> Answer: {this.props.question.answer} </p>
+      if (this.state.answered) {
+        answer = <p id="answer"> Answer: {this.state.answer} </p>
         guess= <p id ="yourAnswer"> Your answer: {this.refs.answerInput.value}</p>
       }
 
