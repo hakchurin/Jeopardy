@@ -7,7 +7,6 @@ import router from './router';
 import GameBoardQuestion from './data';
 import $ from 'jquery';
 import GameBoardQuestionModal from './modal';
-import GameView2 from './GameQuestion2';
 import Category from './category';
 import Scoreboard from './scoreboard';
 import store from './store';

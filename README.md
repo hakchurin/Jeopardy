@@ -7,18 +7,18 @@
 
 ## BUILD TOOLS WITH NPM SCRIPTS
 
-JavaScript
-React.js
-es2015
-Backbone.js
-underscore.js
-SCSS (Sass)
+JavaScript,
+React.js,
+es2015,
+Backbone.js,
+underscore.js,
+SCSS (Sass),
 jQuery (ajax calls)
 
 
 ## APIs
 
-jservice.io
+http://jservice.io/, 
 Kinvey
 
 
