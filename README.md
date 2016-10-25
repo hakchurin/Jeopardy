@@ -5,6 +5,9 @@
  My Jeopardy game renders random categories and questions using Jeopardy's API containing clues and questions from the real gameshow itself!
 
 
+# LIVE SITE
+http://jeopardy-game.surge.sh/
+
 ## BUILD TOOLS WITH NPM SCRIPTS
 
 JavaScript,
@@ -18,7 +21,7 @@ jQuery (ajax calls)
 
 ## APIs
 
-http://jservice.io/, 
+http://jservice.io/,
 Kinvey
 
 
