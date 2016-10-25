@@ -5,14 +5,6 @@ import $ from 'jquery';
 import GameView from './GameView';
 import GameBoardQuestionModal from './modal';
 import GameBoardQuestion2 from './secondGameQuestion';
-//
-
-
-
-
-
-
-
 
 
 

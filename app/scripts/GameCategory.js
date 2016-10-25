@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {router, Route, hashHistory} from 'react-router';
-//import router from './router';
 import GameBoard from './data';
 
 

@@ -16,13 +16,5 @@ const router = (
     <Route path ="/gameVew" component={Color}/>
         </Router>
 )
-//<Route path = "/GameList/:value" component = {GameList}/>
 
 export default router;
-
-
-// <Route path= "/gameView2" component={GameView2}/>
-// <Route path="/GameBoardQuestion" component={GameBoardQuestionModal}/>
-
-// <route path="/gameView" component={GameQuestion2}/>
-// <Route path="/gameView" component ={GameView2}/>

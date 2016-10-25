@@ -20,6 +20,8 @@ const GameBoardQuestion2 = React.createClass({
       success: (response) => {
         let allClues = 200;
         let questions = response;
+        console.log(questions);
+
         let clueArry= questions.clues.filter((clues,i,arr) =>{
           if (clue.value === allClues) {
             allClues += 200;

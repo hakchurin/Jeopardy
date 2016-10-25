@@ -29,9 +29,12 @@ const GameBoardQuestionModal = React.createClass({
    let answer = this.props.question.answer;
    answer = answer.toLowerCase();
    guess = guess.toLowerCase();
-   answer = answer.replace('<i>','').replace('</i>','').replace('(', '').replace(')').replace('\\', '').replace('a', '').replace('the', '');
+   answer = answer.replace('<i>','').replace('</i>','').replace('(', '').replace(')').replace('\\', '');
    this.setState({result:true});
    this.setState({answer: answer});
+   answer= answer.replace(' a ', '').replace('the', '');
+
+
    if (answer === guess){
      let getMoney= store.session.get('money');
      getMoney +=  this.props.question.value;
@@ -76,5 +79,3 @@ back:function(){
 
 });
 export default GameBoardQuestionModal;
-
-console.log('hi');

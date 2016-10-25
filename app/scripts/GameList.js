@@ -18,5 +18,3 @@ const GameList = React.createClass({
 });
 
 export default GameList;
-
-// {this.props.question}
