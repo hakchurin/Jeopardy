@@ -7,7 +7,7 @@
 
 # LIVE SITE
 
-day 33
+
 http://jeopardy-game.surge.sh/
 
 ## BUILD TOOLS WITH NPM SCRIPTS
@@ -40,3 +40,5 @@ A modal that shows the question when you click on it in the game board.
 Input field for user to type in answer
 
 Score: A tally of your score will be kept for every right answer.
+
+day 33
