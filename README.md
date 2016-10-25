@@ -6,6 +6,8 @@
 
 
 # LIVE SITE
+
+day 33
 http://jeopardy-game.surge.sh/
 
 ## BUILD TOOLS WITH NPM SCRIPTS
